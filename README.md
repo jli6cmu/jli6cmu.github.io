@@ -1,1 +1,1 @@
-# jli6cmu.github.io
+# summer-activities-240-hw1

@@ -1,0 +1,349 @@
+
+/* 
+My css stylesheet is sorted by generic to specific as well as element sorting. The reason why I did it this way is that
+initially for the elements, it matters with the importance of the element. After that it is by all of its specific and 
+children elements, this way all of the elements are easy to find together. If you wanted to edit any of the table elements
+they are all together. The table's childen are directly th, td which are general and then after that would be the td itself.
+The same could be said about all of the text specifications.
+
+In all it is about allowing the user to find all of the elements that work in html together to be found with the css together.
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+    body {
+        font-family:  'Oswald', sans-serif;
+        font-size: 90%;
+        color: #666;
+        background-color: #f8f8f8;}
+    li {
+        list-style-image: url("images/icon-plus.png");
+        line-height: 1.6em;}
+    table {
+        border-spacing: 0px;
+    }
+    th, td {
+        color: #000;
+        padding: 5px 30px 5px 10px;
+        border-spacing: 0px;
+        font-size: 90%;
+        margin: 5px;
+        text-align: left;
+        background-color: pink;
+        border-top: 1px solid maroon;
+        border-bottom: 1px solid maroon;
+        border-right: 1px solid maroon;}
+    tr.head th {
+        color: #fff;
+        background-color: lightcoral;
+        border-bottom: 2px solid black;
+        border-right: 1px solid black;
+        border-top: 1px solid black;
+        letter-spacing: 0.15em;}
+    td {
+        color: #000;
+        }
+    tr.even td, tr.even th {
+        background-color: lightcoral;}
+    tr.head th:first-child {
+        /* WebKit is a browser engine used in Apple's Safari browser, Amazon 
+            Kindle e-book reader, BlackBerry Browser in OS 6 and above.
+
+            Not all CSS3 properties work well in all browsers. In a way to ensure that web pages
+            display as expected in their browsers, vendors like Mozilla and Webkit developed their
+            own browser-compatible properties. With CSS3, many compatibility issues are now resolved.
+            However, it is not unusual to still see these properties used in stylesheets.
+
+            */
+
+        /* Webkit property*/
+        -webkit-border-top-left-radius: 5px;
+
+        /* Mozilla property*/
+        -moz-border-radius-topleft: 5px;
+
+        /* CSS3 property*/
+        border-top-left-radius: 5px;
+
+        /* More on border-radius property: https://www.the-art-of-web.com/css/border-radius/ */
+    }
+
+    tr.head th:last-child {
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-right-radius: 5px;}
+    fieldset {
+        width: 310px;
+        height: 300px;
+        margin-top: 40px;
+        margin-left: 20px;
+        border: 1px solid #d6d6d6;
+        background-color: #ffffff;
+        line-height: 1.6em;}
+    legend {
+        font-style: italic;
+        color: #666666;}
+    input[type="text"] {
+        width: 120px;
+        border: 1px solid #d6d6d6;
+        padding: 2px;
+        outline: none;}
+    input[type="text"]:focus,}
+    input[type="text"]:hover {
+        background-color: #d0e2f0;
+        border: 1px solid #999999;}
+    input[type="submit"] {
+        border: 1px solid #006633;
+        background-color: #009966;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 10px;}
+    input[type="submit"]:hover {
+        border: 1px solid #006633;
+        background-color: #00CC33;
+        color: #ffffff;
+        cursor: pointer;}
+    .title {
+        float: left;
+        width: 160px;
+        clear: left;}
+    .submit {
+        width: 310px;
+        text-align: right;}
+    
+    #page {
+        max-width: 940px;
+        min-width: 720px;
+        margin: 10px auto 10px auto;
+        
+        border: 4px  #000;
+        background-color: #ffffff;
+        vertical-align: baseline;
+    }
+    .center-mid-1{
+        width: 940px;
+        background-color: #e0e9f0;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        }
+
+    .center-mid-2{
+        width: 940px;
+        background-color: #efeae6;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        }
+
+    .center-mid-3{
+        float: left;
+        width: 470px;
+        height: 400px;
+        background-color: lightsteelblue;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        }
+
+    .center-mid-4{
+        float: right;
+        width: 470px;
+        background-color: lightsteelblue;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        }
+
+    .center-mid-5{
+        width: 940px;
+        background-color: lightgoldenrodyellow;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        }
+
+    .center-2{
+        width: 940px;
+        margin: auto;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        }
+    
+    .center-3{
+        width: 300px;
+        margin: 0 0;
+        }
+
+    .img-1{
+        margin: auto;
+        width: 100%;
+    }
+    .img-2{
+        margin: auto;
+        height: 300px;
+        width: 30%;
+    }
+    .center-text {
+        text-align: center;
+    }
+    
+    #p1.center-text  {
+        margin: 20px;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    #p2.center-text  {
+        margin: 15px;
+        margin-bottom: 30px;
+    }
+
+    .center-2>h1, .center-2>p{
+        text-align: center;
+        margin: 20px;
+    }
+    
+    h1.center-text
+    {
+        font-family: 'Merriweather', serif;
+        font-size: 500%;
+        width: 100%;
+    }
+    
+    }
+    .menu-holder {
+    float: right;
+    max-width: 80%;
+    position: fixed;
+    text-align: center;
+    height: 100%;
+    background-color: #ffffff;
+    right: -100%;
+    top: 0;
+    transition: right .3s ease;
+    width: 100%;
+    overflow: auto;
+    max-width: 100%;
+    z-index: 99;
+    }     
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+        }
+
+    ul li {
+        display: inline;
+        padding: 10px;
+        float: right;
+    }
+
+    ul li a, 
+    ul a :hover, 
+    ul li a:focus, 
+    ul li a:active {
+        border: none;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+
+    /* Slideshow */
+
+    * {box-sizing:border-box}
+
+    /* Slideshow container */
+    .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+    display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+    background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+
+    @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
